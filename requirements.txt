@@ -1,0 +1,7 @@
+google-generativeai
+huggingface_hub
+pandas
+python-dotenv
+pyyaml
+tqdm
+openpyxl
