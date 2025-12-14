@@ -1,0 +1,22 @@
+# config.yaml
+
+# --- 1. Judge Settings ---
+judge_provider: "google" # Options: 'google', 'huggingface'
+judge_model: "gemini-2.5-flash" # or 'gemini-2.5-pro'
+temperature: 0.1 # Low temperature = more consistent grading
+
+# --- 2. Data Settings ---
+input_file: "data/test_dataset.csv" # The file you created
+output_file: "data/evaluation_results.json"
+
+# --- 3. Column Mapping ---
+# This allows the code to understand YOUR specific CSV headers.
+# Update the values on the right to match your actual CSV columns.
+columns:
+  question_col: "user_input"
+  answer_col: "model_response"
+  ground_truth_col: "golden_answer" # Optional
+  capability_col: "capability" # e.g., Math, Summarization
+
+# --- 4. System Settings ---
+language: "arabic" # Helper tag for system prompts
