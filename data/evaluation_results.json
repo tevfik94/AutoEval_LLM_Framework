@@ -1,0 +1,47 @@
+[
+    {
+        "id": 0,
+        "question": "لخّص: جلست القطة على الحصيرة لأنها كانت دافئة ومشمسة.",
+        "answer": "استمتعت القطة بالجلوس على حصيرة دافئة ومشمسة.",
+        "capability": "Summarization",
+        "ground_truth": "جلست القطة على الحصيرة للاستمتاع بالدفء.",
+        "score": 5,
+        "reasoning": "The model answer successfully summarizes the original sentence. It captures all key elements: the cat, the mat, and the reasons (warm and sunny). The phrasing 'استمتعت القطة بالجلوس' (The cat enjoyed sitting) is a very reasonable and accurate inference from 'لأنها كانت دافئة ومشمسة' (because it was warm and sunny), implying the purpose of sitting. The summary is also more concise than the original sentence. There is no hallucination as all information is derived directly or logically inferred from the source. It even includes 'مشمسة' (sunny) which the provided Ground Truth missed, making it a more complete summary."
+    },
+    {
+        "id": 1,
+        "question": "لخّص: السيارات الكهربائية تقلل الانبعاثات لكنها تتطلب بنية تحتية للشحن.",
+        "answer": "السيارات الكهربائية أسرع من سيارات الوقود.",
+        "capability": "Summarization",
+        "ground_truth": "السيارات الكهربائية تقلل الانبعاثات لكنها تحتاج إلى محطات شحن.",
+        "score": 1,
+        "reasoning": "The question asks to summarize two key points about electric cars: their ability to reduce emissions and their requirement for charging infrastructure. The model answer states that 'Electric cars are faster than fuel cars.' This information is not present in the original text provided in the question. Therefore, the model answer contains hallucinated information. According to the rubric, if hallucination is present, the score must be 1."
+    },
+    {
+        "id": 2,
+        "question": "ما ناتج 12 × 8؟",
+        "answer": "96",
+        "capability": "Math",
+        "ground_truth": "96",
+        "score": 5,
+        "reasoning": "The question asks for the product of 12 and 8. The model answer provided is '96'.\n\n1.  **Logic:** The question implies a direct multiplication operation, and the answer is the direct result of that operation. The logic is sound.\n2.  **Calculation:** 12 multiplied by 8 indeed equals 96. The calculation is perfectly correct.\n3.  **Format:** The answer is presented clearly and concisely as a single number, which is appropriate for the question.\n\nGiven that the calculation is correct, the logic is sound, and the format is clear, the model answer fully meets all criteria."
+    },
+    {
+        "id": 3,
+        "question": "إذا كان لديك 10 تفاحات وأعطيت 3 منها، كم يتبقى لديك؟",
+        "answer": "6",
+        "capability": "Math",
+        "ground_truth": "7",
+        "score": 1,
+        "reasoning": "The question asks for a simple subtraction: 10 - 3. The correct answer is 7. The model answer provided is 6, which is incorrect. The calculation is fundamentally wrong, leading to an inaccurate final value. According to the rubric, the calculation is incorrect."
+    },
+    {
+        "id": 4,
+        "question": "ترجم إلى الإسبانية: «صباح الخير، كيف حالك؟»",
+        "answer": "Buenas noches, ¿cómo estás?",
+        "capability": "Translation",
+        "ground_truth": "Buenos días, ¿cómo estás?",
+        "score": 3,
+        "reasoning": "The user asked to translate 'صباح الخير، كيف حالك؟' (Good morning, how are you?) into Spanish. The model provided 'Buenas noches, ¿cómo estás?'.\n\n1.  **Fidelity:** The translation of 'صباح الخير' (Good morning) is incorrect. It was translated as 'Buenas noches' (Good evening/night) instead of 'Buenos días'. This is a significant error in meaning. However, 'كيف حالك؟' (how are you?) was correctly translated as '¿cómo estás?'.\n2.  **Fluency:** The phrase 'Buenas noches, ¿cómo estás?' is grammatically correct and sounds natural in Spanish.\n3.  **Grammar:** There are no grammatical errors in the model's output.\n\nDespite the correct grammar and fluency of the output phrase, the core meaning of the greeting ('Good morning' vs 'Good evening/night') was mistranslated. This is a major fidelity issue, even though half of the phrase was translated accurately. Therefore, the answer is partially correct but contains a significant error."
+    }
+]
