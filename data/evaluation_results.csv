@@ -1,0 +1,18 @@
+﻿id,score,reasoning,question,answer,ground_truth,capability
+0,5,"The model answer successfully summarizes the original sentence. It captures all key elements: the cat, the mat, and the reasons (warm and sunny). The phrasing 'استمتعت القطة بالجلوس' (The cat enjoyed sitting) is a very reasonable and accurate inference from 'لأنها كانت دافئة ومشمسة' (because it was warm and sunny), implying the purpose of sitting. The summary is also more concise than the original sentence. There is no hallucination as all information is derived directly or logically inferred from the source. It even includes 'مشمسة' (sunny) which the provided Ground Truth missed, making it a more complete summary.",لخّص: جلست القطة على الحصيرة لأنها كانت دافئة ومشمسة.,استمتعت القطة بالجلوس على حصيرة دافئة ومشمسة.,جلست القطة على الحصيرة للاستمتاع بالدفء.,Summarization
+1,1,"The question asks to summarize two key points about electric cars: their ability to reduce emissions and their requirement for charging infrastructure. The model answer states that 'Electric cars are faster than fuel cars.' This information is not present in the original text provided in the question. Therefore, the model answer contains hallucinated information. According to the rubric, if hallucination is present, the score must be 1.",لخّص: السيارات الكهربائية تقلل الانبعاثات لكنها تتطلب بنية تحتية للشحن.,السيارات الكهربائية أسرع من سيارات الوقود.,السيارات الكهربائية تقلل الانبعاثات لكنها تحتاج إلى محطات شحن.,Summarization
+2,5,"The question asks for the product of 12 and 8. The model answer provided is '96'.
+
+1.  **Logic:** The question implies a direct multiplication operation, and the answer is the direct result of that operation. The logic is sound.
+2.  **Calculation:** 12 multiplied by 8 indeed equals 96. The calculation is perfectly correct.
+3.  **Format:** The answer is presented clearly and concisely as a single number, which is appropriate for the question.
+
+Given that the calculation is correct, the logic is sound, and the format is clear, the model answer fully meets all criteria.",ما ناتج 12 × 8؟,96,96,Math
+3,1,"The question asks for a simple subtraction: 10 - 3. The correct answer is 7. The model answer provided is 6, which is incorrect. The calculation is fundamentally wrong, leading to an inaccurate final value. According to the rubric, the calculation is incorrect.",إذا كان لديك 10 تفاحات وأعطيت 3 منها، كم يتبقى لديك؟,6,7,Math
+4,3,"The user asked to translate 'صباح الخير، كيف حالك؟' (Good morning, how are you?) into Spanish. The model provided 'Buenas noches, ¿cómo estás?'.
+
+1.  **Fidelity:** The translation of 'صباح الخير' (Good morning) is incorrect. It was translated as 'Buenas noches' (Good evening/night) instead of 'Buenos días'. This is a significant error in meaning. However, 'كيف حالك؟' (how are you?) was correctly translated as '¿cómo estás?'.
+2.  **Fluency:** The phrase 'Buenas noches, ¿cómo estás?' is grammatically correct and sounds natural in Spanish.
+3.  **Grammar:** There are no grammatical errors in the model's output.
+
+Despite the correct grammar and fluency of the output phrase, the core meaning of the greeting ('Good morning' vs 'Good evening/night') was mistranslated. This is a major fidelity issue, even though half of the phrase was translated accurately. Therefore, the answer is partially correct but contains a significant error.",ترجم إلى الإسبانية: «صباح الخير، كيف حالك؟»,"Buenas noches, ¿cómo estás?","Buenos días, ¿cómo estás?",Translation
