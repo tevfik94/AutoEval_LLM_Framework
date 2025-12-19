@@ -14,8 +14,8 @@ Designed by **Tevfik Istanbullu**, this tool automates the Quality Assurance pro
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/AutoJudge.git
-   cd AutoJudge
+   git clone https://github.com/tevfik94/AutoEval_LLM_Framework.git
+   cd AutoEval_LLM_Framework
 2. **Install dependencies:**
 
     ```bash
